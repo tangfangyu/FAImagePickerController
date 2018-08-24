@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08089C14212BA3DD00FA9193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08089C13212BA3DD00FA9193 /* AppDelegate.m */; };
+		08089C17212BA3DD00FA9193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08089C16212BA3DD00FA9193 /* ViewController.m */; };
+		08089C1A212BA3DD00FA9193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08089C18212BA3DD00FA9193 /* Main.storyboard */; };
+		08089C1C212BA3DE00FA9193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08089C1B212BA3DE00FA9193 /* Assets.xcassets */; };
+		08089C1F212BA3DE00FA9193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08089C1D212BA3DE00FA9193 /* LaunchScreen.storyboard */; };
+		08089C22212BA3DE00FA9193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08089C21212BA3DE00FA9193 /* main.m */; };
+		08089C2C212BA3DE00FA9193 /* YallaImagePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08089C2B212BA3DE00FA9193 /* YallaImagePickerTests.m */; };
+		08089C37212BA3DE00FA9193 /* YallaImagePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08089C36212BA3DE00FA9193 /* YallaImagePickerUITests.m */; };
+		08089C46212BA40200FA9193 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08089C45212BA40200FA9193 /* Photos.framework */; };
+		08587EA32130011A00C5535E /* FAAssetCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587E952130011A00C5535E /* FAAssetCollectionModel.m */; };
+		08587EA42130011A00C5535E /* FAAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587E962130011A00C5535E /* FAAssetModel.m */; };
+		08587EA52130011A00C5535E /* FAAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587E992130011A00C5535E /* FAAssetViewController.m */; };
+		08587EA62130011A00C5535E /* FAImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587E9A2130011A00C5535E /* FAImagePickerController.m */; };
+		08587EA72130011A00C5535E /* FAPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587E9B2130011A00C5535E /* FAPreviewViewController.m */; };
+		08587EA82130011A00C5535E /* FAAsserCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587E9C2130011A00C5535E /* FAAsserCollectionController.m */; };
+		08587EA92130011A00C5535E /* FAAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587EA22130011A00C5535E /* FAAssetCollectionViewCell.m */; };
+		08587EAC2130064300C5535E /* FAAssetCollectionListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08587EAB2130064300C5535E /* FAAssetCollectionListCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08089C28212BA3DE00FA9193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08089C07212BA3DD00FA9193 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08089C0E212BA3DD00FA9193;
+			remoteInfo = YallaImagePicker;
+		};
+		08089C33212BA3DE00FA9193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08089C07212BA3DD00FA9193 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08089C0E212BA3DD00FA9193;
+			remoteInfo = YallaImagePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08089C0F212BA3DD00FA9193 /* YallaImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YallaImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08089C12212BA3DD00FA9193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08089C13212BA3DD00FA9193 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08089C15212BA3DD00FA9193 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		08089C16212BA3DD00FA9193 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08089C19212BA3DD00FA9193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08089C1B212BA3DE00FA9193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08089C1E212BA3DE00FA9193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08089C20212BA3DE00FA9193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08089C21212BA3DE00FA9193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08089C27212BA3DE00FA9193 /* YallaImagePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YallaImagePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08089C2B212BA3DE00FA9193 /* YallaImagePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YallaImagePickerTests.m; sourceTree = "<group>"; };
+		08089C2D212BA3DE00FA9193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08089C32212BA3DE00FA9193 /* YallaImagePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YallaImagePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08089C36212BA3DE00FA9193 /* YallaImagePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YallaImagePickerUITests.m; sourceTree = "<group>"; };
+		08089C38212BA3DE00FA9193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08089C45212BA40200FA9193 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		08587E932130011A00C5535E /* FAAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAAssetModel.h; sourceTree = "<group>"; };
+		08587E942130011A00C5535E /* FAAssetCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAAssetCollectionModel.h; sourceTree = "<group>"; };
+		08587E952130011A00C5535E /* FAAssetCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAAssetCollectionModel.m; sourceTree = "<group>"; };
+		08587E962130011A00C5535E /* FAAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAAssetModel.m; sourceTree = "<group>"; };
+		08587E982130011A00C5535E /* FAAsserCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAAsserCollectionController.h; sourceTree = "<group>"; };
+		08587E992130011A00C5535E /* FAAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAAssetViewController.m; sourceTree = "<group>"; };
+		08587E9A2130011A00C5535E /* FAImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImagePickerController.m; sourceTree = "<group>"; };
+		08587E9B2130011A00C5535E /* FAPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAPreviewViewController.m; sourceTree = "<group>"; };
+		08587E9C2130011A00C5535E /* FAAsserCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAAsserCollectionController.m; sourceTree = "<group>"; };
+		08587E9D2130011A00C5535E /* FAAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAAssetViewController.h; sourceTree = "<group>"; };
+		08587E9E2130011A00C5535E /* FAImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImagePickerController.h; sourceTree = "<group>"; };
+		08587E9F2130011A00C5535E /* FAPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAPreviewViewController.h; sourceTree = "<group>"; };
+		08587EA12130011A00C5535E /* FAAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAAssetCollectionViewCell.h; sourceTree = "<group>"; };
+		08587EA22130011A00C5535E /* FAAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAAssetCollectionViewCell.m; sourceTree = "<group>"; };
+		08587EAA2130064300C5535E /* FAAssetCollectionListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAAssetCollectionListCell.h; sourceTree = "<group>"; };
+		08587EAB2130064300C5535E /* FAAssetCollectionListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAAssetCollectionListCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08089C0C212BA3DD00FA9193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08089C46212BA40200FA9193 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08089C24212BA3DE00FA9193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08089C2F212BA3DE00FA9193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08089C06212BA3DD00FA9193 = {
+			isa = PBXGroup;
+			children = (
+				08089C11212BA3DD00FA9193 /* YallaImagePicker */,
+				08089C2A212BA3DE00FA9193 /* YallaImagePickerTests */,
+				08089C35212BA3DE00FA9193 /* YallaImagePickerUITests */,
+				08089C10212BA3DD00FA9193 /* Products */,
+				08089C44212BA40200FA9193 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08089C10212BA3DD00FA9193 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08089C0F212BA3DD00FA9193 /* YallaImagePicker.app */,
+				08089C27212BA3DE00FA9193 /* YallaImagePickerTests.xctest */,
+				08089C32212BA3DE00FA9193 /* YallaImagePickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08089C11212BA3DD00FA9193 /* YallaImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				08587E912130011A00C5535E /* FAImagePicker */,
+				08089C12212BA3DD00FA9193 /* AppDelegate.h */,
+				08089C13212BA3DD00FA9193 /* AppDelegate.m */,
+				08089C15212BA3DD00FA9193 /* ViewController.h */,
+				08089C16212BA3DD00FA9193 /* ViewController.m */,
+				08089C18212BA3DD00FA9193 /* Main.storyboard */,
+				08089C1B212BA3DE00FA9193 /* Assets.xcassets */,
+				08089C1D212BA3DE00FA9193 /* LaunchScreen.storyboard */,
+				08089C20212BA3DE00FA9193 /* Info.plist */,
+				08089C21212BA3DE00FA9193 /* main.m */,
+			);
+			path = YallaImagePicker;
+			sourceTree = "<group>";
+		};
+		08089C2A212BA3DE00FA9193 /* YallaImagePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				08089C2B212BA3DE00FA9193 /* YallaImagePickerTests.m */,
+				08089C2D212BA3DE00FA9193 /* Info.plist */,
+			);
+			path = YallaImagePickerTests;
+			sourceTree = "<group>";
+		};
+		08089C35212BA3DE00FA9193 /* YallaImagePickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08089C36212BA3DE00FA9193 /* YallaImagePickerUITests.m */,
+				08089C38212BA3DE00FA9193 /* Info.plist */,
+			);
+			path = YallaImagePickerUITests;
+			sourceTree = "<group>";
+		};
+		08089C44212BA40200FA9193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08089C45212BA40200FA9193 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08587E912130011A00C5535E /* FAImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				08587E922130011A00C5535E /* Models */,
+				08587E972130011A00C5535E /* ViewControllers */,
+				08587EA02130011A00C5535E /* Views */,
+			);
+			path = FAImagePicker;
+			sourceTree = "<group>";
+		};
+		08587E922130011A00C5535E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08587E932130011A00C5535E /* FAAssetModel.h */,
+				08587E962130011A00C5535E /* FAAssetModel.m */,
+				08587E942130011A00C5535E /* FAAssetCollectionModel.h */,
+				08587E952130011A00C5535E /* FAAssetCollectionModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08587E972130011A00C5535E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				08587E9E2130011A00C5535E /* FAImagePickerController.h */,
+				08587E9A2130011A00C5535E /* FAImagePickerController.m */,
+				08587E9D2130011A00C5535E /* FAAssetViewController.h */,
+				08587E992130011A00C5535E /* FAAssetViewController.m */,
+				08587E982130011A00C5535E /* FAAsserCollectionController.h */,
+				08587E9C2130011A00C5535E /* FAAsserCollectionController.m */,
+				08587E9F2130011A00C5535E /* FAPreviewViewController.h */,
+				08587E9B2130011A00C5535E /* FAPreviewViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		08587EA02130011A00C5535E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08587EA12130011A00C5535E /* FAAssetCollectionViewCell.h */,
+				08587EA22130011A00C5535E /* FAAssetCollectionViewCell.m */,
+				08587EAA2130064300C5535E /* FAAssetCollectionListCell.h */,
+				08587EAB2130064300C5535E /* FAAssetCollectionListCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08089C0E212BA3DD00FA9193 /* YallaImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08089C3B212BA3DE00FA9193 /* Build configuration list for PBXNativeTarget "YallaImagePicker" */;
+			buildPhases = (
+				08089C0B212BA3DD00FA9193 /* Sources */,
+				08089C0C212BA3DD00FA9193 /* Frameworks */,
+				08089C0D212BA3DD00FA9193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YallaImagePicker;
+			productName = YallaImagePicker;
+			productReference = 08089C0F212BA3DD00FA9193 /* YallaImagePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08089C26212BA3DE00FA9193 /* YallaImagePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08089C3E212BA3DE00FA9193 /* Build configuration list for PBXNativeTarget "YallaImagePickerTests" */;
+			buildPhases = (
+				08089C23212BA3DE00FA9193 /* Sources */,
+				08089C24212BA3DE00FA9193 /* Frameworks */,
+				08089C25212BA3DE00FA9193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08089C29212BA3DE00FA9193 /* PBXTargetDependency */,
+			);
+			name = YallaImagePickerTests;
+			productName = YallaImagePickerTests;
+			productReference = 08089C27212BA3DE00FA9193 /* YallaImagePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08089C31212BA3DE00FA9193 /* YallaImagePickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08089C41212BA3DE00FA9193 /* Build configuration list for PBXNativeTarget "YallaImagePickerUITests" */;
+			buildPhases = (
+				08089C2E212BA3DE00FA9193 /* Sources */,
+				08089C2F212BA3DE00FA9193 /* Frameworks */,
+				08089C30212BA3DE00FA9193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08089C34212BA3DE00FA9193 /* PBXTargetDependency */,
+			);
+			name = YallaImagePickerUITests;
+			productName = YallaImagePickerUITests;
+			productReference = 08089C32212BA3DE00FA9193 /* YallaImagePickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08089C07212BA3DD00FA9193 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = fabs;
+				TargetAttributes = {
+					08089C0E212BA3DD00FA9193 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					08089C26212BA3DE00FA9193 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 08089C0E212BA3DD00FA9193;
+					};
+					08089C31212BA3DE00FA9193 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 08089C0E212BA3DD00FA9193;
+					};
+				};
+			};
+			buildConfigurationList = 08089C0A212BA3DD00FA9193 /* Build configuration list for PBXProject "YallaImagePicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08089C06212BA3DD00FA9193;
+			productRefGroup = 08089C10212BA3DD00FA9193 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08089C0E212BA3DD00FA9193 /* YallaImagePicker */,
+				08089C26212BA3DE00FA9193 /* YallaImagePickerTests */,
+				08089C31212BA3DE00FA9193 /* YallaImagePickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08089C0D212BA3DD00FA9193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08089C1F212BA3DE00FA9193 /* LaunchScreen.storyboard in Resources */,
+				08089C1C212BA3DE00FA9193 /* Assets.xcassets in Resources */,
+				08089C1A212BA3DD00FA9193 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08089C25212BA3DE00FA9193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08089C30212BA3DE00FA9193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08089C0B212BA3DD00FA9193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08587EA82130011A00C5535E /* FAAsserCollectionController.m in Sources */,
+				08587EA52130011A00C5535E /* FAAssetViewController.m in Sources */,
+				08587EA92130011A00C5535E /* FAAssetCollectionViewCell.m in Sources */,
+				08089C17212BA3DD00FA9193 /* ViewController.m in Sources */,
+				08089C22212BA3DE00FA9193 /* main.m in Sources */,
+				08587EA42130011A00C5535E /* FAAssetModel.m in Sources */,
+				08587EA72130011A00C5535E /* FAPreviewViewController.m in Sources */,
+				08587EAC2130064300C5535E /* FAAssetCollectionListCell.m in Sources */,
+				08089C14212BA3DD00FA9193 /* AppDelegate.m in Sources */,
+				08587EA32130011A00C5535E /* FAAssetCollectionModel.m in Sources */,
+				08587EA62130011A00C5535E /* FAImagePickerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08089C23212BA3DE00FA9193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08089C2C212BA3DE00FA9193 /* YallaImagePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08089C2E212BA3DE00FA9193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08089C37212BA3DE00FA9193 /* YallaImagePickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08089C29212BA3DE00FA9193 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08089C0E212BA3DD00FA9193 /* YallaImagePicker */;
+			targetProxy = 08089C28212BA3DE00FA9193 /* PBXContainerItemProxy */;
+		};
+		08089C34212BA3DE00FA9193 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08089C0E212BA3DD00FA9193 /* YallaImagePicker */;
+			targetProxy = 08089C33212BA3DE00FA9193 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08089C18212BA3DD00FA9193 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08089C19212BA3DD00FA9193 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08089C1D212BA3DE00FA9193 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08089C1E212BA3DE00FA9193 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08089C39212BA3DE00FA9193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08089C3A212BA3DE00FA9193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08089C3C212BA3DE00FA9193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WN9VSLAW6R;
+				INFOPLIST_FILE = YallaImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yalla.yallagame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08089C3D212BA3DE00FA9193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WN9VSLAW6R;
+				INFOPLIST_FILE = YallaImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yalla.yallagame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08089C3F212BA3DE00FA9193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YallaImagePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yalla.YallaImagePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YallaImagePicker.app/YallaImagePicker";
+			};
+			name = Debug;
+		};
+		08089C40212BA3DE00FA9193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YallaImagePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yalla.YallaImagePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YallaImagePicker.app/YallaImagePicker";
+			};
+			name = Release;
+		};
+		08089C42212BA3DE00FA9193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YallaImagePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yalla.YallaImagePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YallaImagePicker;
+			};
+			name = Debug;
+		};
+		08089C43212BA3DE00FA9193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YallaImagePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yalla.YallaImagePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YallaImagePicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08089C0A212BA3DD00FA9193 /* Build configuration list for PBXProject "YallaImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08089C39212BA3DE00FA9193 /* Debug */,
+				08089C3A212BA3DE00FA9193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08089C3B212BA3DE00FA9193 /* Build configuration list for PBXNativeTarget "YallaImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08089C3C212BA3DE00FA9193 /* Debug */,
+				08089C3D212BA3DE00FA9193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08089C3E212BA3DE00FA9193 /* Build configuration list for PBXNativeTarget "YallaImagePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08089C3F212BA3DE00FA9193 /* Debug */,
+				08089C40212BA3DE00FA9193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08089C41212BA3DE00FA9193 /* Build configuration list for PBXNativeTarget "YallaImagePickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08089C42212BA3DE00FA9193 /* Debug */,
+				08089C43212BA3DE00FA9193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08089C07212BA3DD00FA9193 /* Project object */;
+}
