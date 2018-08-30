@@ -11,7 +11,7 @@
 
 #import "FAAssetCollectionViewCell.h"
 
-@interface FAAssetViewController ()<UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+@interface FAAssetViewController ()<UICollectionViewDelegateFlowLayout, UICollectionViewDataSource,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @property (strong, nonatomic) NSMutableArray <PHAsset *>*selectedAsset;
 
@@ -26,6 +26,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    switch (self.sourceType) {
+        case UIImagePickerControllerSourceTypeCamera:{
+            [self requestCameraAuthorization];
+        }break;
+        default:{
+            [self requestPhotoLibraryAuthorization];
+        }break;
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.collectionView reloadData];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    [self.collectionView setFrame:self.view.bounds];
+}
+
+- (void)requestCameraAuthorization {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
+        pickerController.sourceType = self.sourceType;
+        pickerController.allowsEditing = YES;
+        pickerController.delegate = self;
+        [self presentViewController:pickerController animated:NO completion:nil];
+    }else{
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请在设置中打开相机访问权限" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        }];
+        [alertController addAction:cancel];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+}
+
+- (void)requestPhotoLibraryAuthorization {
     __weak typeof(self) weak_self = self;
     [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
         __strong typeof(weak_self) strong_self = weak_self;
@@ -47,16 +85,6 @@
             }
         });
     }];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self.collectionView reloadData];
-}
-
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
-    [self.collectionView setFrame:self.view.bounds];
 }
 
 #pragma mark - Event Methods
@@ -92,7 +120,7 @@
 - (BOOL)verifyCanAddAsset {
     NSInteger selectedMaxNumber = ((FAImagePickerController *)self.navigationController).selectedMaxNumber;
     if (self.selectedAsset.count >= selectedMaxNumber) {
-        NSString *message = [NSString stringWithFormat:@"最多只能选择%zd张图片",selectedMaxNumber];
+        NSString *message = [NSString stringWithFormat:@"最多只能选择%@张图片",@(selectedMaxNumber)];
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *cancle = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
         [alertController addAction:cancle];
@@ -101,6 +129,28 @@
     }
     return YES;
 }
+
+#pragma mark - <UIImagePickerContrllerDelegate>Methods
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    if (self.didFinishHandler) {
+        self.didFinishHandler(@[image]);
+    }
+    __weak typeof(self) weak_self = self;
+    [picker dismissViewControllerAnimated:YES completion:^{
+        __strong typeof(weak_self)strong_self = weak_self;
+        [strong_self.navigationController dismissViewControllerAnimated:NO completion:nil];
+    }];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    __weak typeof(self) weak_self = self;
+    [picker dismissViewControllerAnimated:YES completion:^{
+        __strong typeof(weak_self)strong_self = weak_self;
+        [strong_self.navigationController dismissViewControllerAnimated:NO completion:nil];
+    }];
+}
+#pragma mark -
 
 #pragma mark - <UICollectionViewDelegate>And<UICollectionViewDataSource>Methods
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {

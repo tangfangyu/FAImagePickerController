@@ -14,11 +14,22 @@
 /**
  * 选完图片的回调方法
  */
-- (void)imagePickerController:(FAImagePickerController *)imagePickerController didFinishPickingMediaWithInfo:(NSArray <UIImage *>*)info;
+- (void)fabs_imagePickerController:(FAImagePickerController *)imagePickerController didFinishPickingMediaWithInfo:(NSArray <UIImage *>*)info;
 
 @end
 
 NS_CLASS_AVAILABLE_IOS(8_0) @interface FAImagePickerController : UINavigationController
+
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController NS_UNAVAILABLE;
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil NS_UNAVAILABLE;
+- (instancetype)initWithNavigationBarClass:(Class)navigationBarClass toolbarClass:(Class)toolbarClass NS_UNAVAILABLE;
+
+/**
+ * 初始化方法.
+ */
+- (instancetype)initWithSourceType:(UIImagePickerControllerSourceType)sourceType;
 
 /**
  * delegate

@@ -12,6 +12,11 @@
 @interface FAAssetViewController : UIViewController
 
 /**
+ * 相册类型
+ */
+@property (nonatomic) UIImagePickerControllerSourceType sourceType;
+
+/**
  * 相册对象
  */
 @property (strong, nonatomic) PHAssetCollection *collection;

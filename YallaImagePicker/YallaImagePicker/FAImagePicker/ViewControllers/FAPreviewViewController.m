@@ -83,7 +83,7 @@
 - (BOOL)verifyCanAddAsset {
     NSInteger selectedMaxNumber = ((FAImagePickerController *)self.navigationController).selectedMaxNumber;
     if (self.selectedAsset.count >= selectedMaxNumber) {
-        NSString *message = [NSString stringWithFormat:@"最多只能选择%zd张图片",selectedMaxNumber];
+        NSString *message = [NSString stringWithFormat:@"最多只能选择%@张图片",@(selectedMaxNumber)];
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *cancle = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
         [alertController addAction:cancle];

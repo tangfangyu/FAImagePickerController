@@ -20,13 +20,13 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)imagePickerController:(FAImagePickerController *)imagePickerController didFinishPickingMediaWithInfo:(NSArray<UIImage *> *)info {
+- (void)fabs_imagePickerController:(FAImagePickerController *)imagePickerController didFinishPickingMediaWithInfo:(NSArray<UIImage *> *)info {
     
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    FAImagePickerController *controller = [[FAImagePickerController alloc] init];
+    FAImagePickerController *controller = [[FAImagePickerController alloc] initWithSourceType:UIImagePickerControllerSourceTypeCamera];
     controller.pickerDelegate = self;
     controller.selectedMaxNumber = 3;
     controller.normalImage = [UIImage imageNamed:@"service_seleted"];

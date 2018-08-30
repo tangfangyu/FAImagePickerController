@@ -13,13 +13,14 @@
 @implementation FAImagePickerController
 @synthesize selectedMaxNumber = _selectedMaxNumber;
 
-- (instancetype)init {
+- (instancetype)initWithSourceType:(UIImagePickerControllerSourceType)sourceType {
     FAAsserCollectionController *collectionController = [[FAAsserCollectionController alloc] init];
     [collectionController setDidFinishHandler:[self didFinishHandler]];
     self = [super initWithRootViewController:collectionController];
     if (self) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
         FAAssetViewController *assetController = [[FAAssetViewController alloc] init];
+        [assetController setSourceType:sourceType];
         [assetController setDidFinishHandler:[self didFinishHandler]];
         [self pushViewController:assetController animated:NO];
     }
@@ -30,8 +31,8 @@
     __weak typeof(self) weak_self = self;
     return ^(NSArray<UIImage *> *info){
         __strong typeof(weak_self) strong_self = weak_self;
-        if (strong_self.pickerDelegate && [strong_self.pickerDelegate respondsToSelector:@selector(imagePickerController:didFinishPickingMediaWithInfo:)]) {
-            [strong_self.pickerDelegate imagePickerController:strong_self didFinishPickingMediaWithInfo:info];
+        if (strong_self.pickerDelegate && [strong_self.pickerDelegate respondsToSelector:@selector(fabs_imagePickerController:didFinishPickingMediaWithInfo:)]) {
+            [strong_self.pickerDelegate fabs_imagePickerController:strong_self didFinishPickingMediaWithInfo:info];
         }
     };
 }
